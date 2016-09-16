@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href="/img/hkweather.png">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Vanguard Trailhead Weather Application - Demo</title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="/chart/dist/Chart.bundle.js"></script>
+		<script src="/pgLoadDefault.js"></script>
+		<style>
+			body {
+				padding-top: 60px;
+			}
+			table, td, th {
+				border: 1px solid #ddd;
+				text-align: center;
+			}		
+			table {
+				border-collapse: collapse;
+				width: 100%;
+			}			
+		</style>
+		<script>
+			pageLoadDefault();
+		</script>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top" style="width:100%; margin:center;">
+			<div class="container" style="width:99%; margin:left;">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">Vanguard Trailhead Weather Application -- WUnderground Weather API Data</a>
+				</div>
+			</div>
+		</nav>
+		<div class="container" style="width:99%; margin:center;">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Current Conditions</h3>
+				</div>
+				<div class="panel-body" id="current">
+					<div class="form-group" id="loc">
+						<label for="location">Location:</label>
+						<div id="location"></div>
+					</div>
+					<div class="form-group" id="tmp">
+						<label for="temp_f">Temperature: </label>
+						<div id="temp_f"></div>		
+					</div>
+					<div class="form-group" id="vis">
+						<label for="visibility_mi">Visibility: </label>
+						<div id="visibility_mi"></div>
+					</div>
+					<div class="form-group" id="prs">
+						<label for="pressure_in">Pressure: </label>
+						<div id="pressure_in"></div>
+					</div>
+					<div class="form-group" id="obs">
+						<label for="observation_time">Last Update:</label>
+						<div id="observation_time"></div>
+					</div>
+					<div class="form-group" id="hum">
+						<label for="relative_humidity">Humidity: </label>
+						<div id="relative_humidity"></div>
+					</div>
+					<div class="form-group" id="wnd">
+						<label for="wind_string">Wind: </label>
+						<div id="wind_string"></div>
+					</div>	
+					---- ---- ----<br>
+					<div class="form-group" id="wnd">
+						<label for="src_url">API Source: </label>
+						<div id="src_url"></div>
+					</div>
+					<div class="form-group" id="wnd">
+						<label for="src_api_ver">API Version: </label>
+						<div id="src_api_ver"></div>
+					</div>
+				</div>
+				<div class="panel-heading">
+					<h3 class="panel-title">10 Day Forecast Conditions</h3>
+				</div>
+				<div class="panel-body" id="forecastGraph">
+					<label for="chartForecast"></label>
+					<div class="form-group" id="chartForecastCanvas">
+						<canvas id="chartForecast" width="100" height="100"></canvas>
+					</div>
+					<div class="form-group" id="dataTblFcst">
+						<label for="wind_string">Forecast Conditions - Detailed Data Table</label>
+						<div id="dataTableForecast"></div>
+					</div>
+				</div>
+				<div class="panel-heading">
+					<h3 class="panel-title">Historical Conditions (Previous Day - Hourly)</h3>
+				</div>
+				<div class="panel-body" id="historicalGraph">
+					<label for="chartHistorical"></label>
+					<div class="form-group" id="chartHistoricalCanvas">
+						<canvas id="chartHistorical" width="100" height="100"></canvas>
+					</div>
+					<div class="form-group" id="dataTblHst">
+						<label for="wind_string">Historical Conditions - Detailed Data Table</label>
+						<div id="dataTableHistorical"></div>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</body>
+</html>

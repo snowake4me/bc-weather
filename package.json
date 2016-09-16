@@ -1,0 +1,27 @@
+{
+  "name": "VanguardWeatherApp",
+  "version": "0.0.2",
+  "private": false,
+  "description": "Vanguard Trailhead Weather Application",
+  "engines": {
+    "node": "0.12.*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VanguardArchitecture/VanguardWeatherApp"
+  },
+  "scripts":{
+	"start": "node app.js"
+  },
+  "dependencies": {
+    "cfenv": "^1.0.3",
+    "express": "3.4.7",
+    "request": "^2.51.0"
+  },  
+  "author": [
+    {
+      "name": "Vanguard Architecture"
+    }
+  ],
+   "license": "Apache License"
+}
