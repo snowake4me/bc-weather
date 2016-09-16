@@ -1,6 +1,6 @@
 {
-  "name": "VanguardWeatherApp",
-  "version": "0.0.2",
+  "name": "TrailheadWeatherApp",
+  "version": "0.1.0",
   "private": false,
   "description": "Vanguard Trailhead Weather Application",
   "engines": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/VanguardArchitecture/VanguardWeatherApp"
+    "url": "https://github.com/VanguardArchitecture/TrailheadWeatherApp"
   },
   "scripts":{
 	"start": "node app.js"
