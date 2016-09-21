@@ -1,3 +1,4 @@
 applications:
 - path: .
+  name: TrailheadWeatherApp
   command: node app.js
