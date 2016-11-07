@@ -6,6 +6,7 @@
 var express = require('express');
 var request = require('request');
 var cfenv = require('cfenv');
+
 var app = express();
 var appEnv = cfenv.getAppEnv();
 app.use(express.static(__dirname + '/public'));
@@ -15,7 +16,7 @@ process.env.TZ = 'America/Los_Angeles';
 
 //API Information
 var weather_host = "http://api.wunderground.com/api/"; //Weather API host
-var apiKey = "d95017df2847b211" //Wunderground API Key
+var apiKey = process.env.WUAPI //Wunderground API Key (Environment Variable)
 
 /*  Function: weatherAPI
  *  Inputs: path: (Wunderground API path) (See WUnderground API Documentation)
