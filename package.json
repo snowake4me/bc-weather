@@ -1,14 +1,14 @@
 {
-  "name": "TrailheadWeatherApp",
-  "version": "0.1.0",
+  "name": "BasecampWeatherApp",
+  "version": "1.0.0",
   "private": false,
-  "description": "Vanguard Trailhead Weather Application",
+  "description": "Vanguard Basecamp Weather Application",
   "engines": {
-    "node": "0.12.*"
+    "node": "4.5.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/VanguardArchitecture/TrailheadWeatherApp"
+    "url": "https://github.com/VanguardArchitecture/bc-weather-application"
   },
   "scripts":{
 	"start": "node app.js"
