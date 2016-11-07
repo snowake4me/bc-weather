@@ -16,7 +16,7 @@ process.env.TZ = 'America/Los_Angeles';
 
 //API Information
 var weather_host = "http://api.wunderground.com/api/"; //Weather API host
-var apiKey = process.env.WUAPI //Wunderground API Key (Environment Variable)
+var apiKey = process.env.WUAPIKEY //Wunderground API Key (Environment Variable)
 
 /*  Function: weatherAPI
  *  Inputs: path: (Wunderground API path) (See WUnderground API Documentation)
