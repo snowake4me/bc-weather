@@ -90,6 +90,6 @@ app.get('/api/weather', function(req, res) {
 });
 
 // Application monitoring server
-app.listen(appEnv.port, appEnv.bind, function() {
+app.listen(process.env.PORT, function() {
   console.log("server starting on " + appEnv.url);
 });
